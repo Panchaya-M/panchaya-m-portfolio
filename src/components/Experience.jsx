@@ -66,11 +66,11 @@ const ExpandToggle = ({ isExpand, onclick }) => {
   return (
     <div className="expand-toggle">
       {isExpand ? (
-        <button className="flex items-center gap-2" onClick={() => onclick}>
+        <button className="flex items-center gap-2" onClick={onclick}>
           Hide <i className="fa-solid fa-chevron-up mt-1"></i>
         </button>
       ) : (
-        <button className="flex items-center gap-2" onClick={() => onclick}>
+        <button className="flex items-center gap-2" onClick={onclick}>
           More Details
           <i className="fa-solid fa-chevron-down animate-bounce mt-1"></i>
         </button>
