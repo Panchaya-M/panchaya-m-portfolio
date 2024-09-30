@@ -56,6 +56,18 @@
     @apply p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white w-[30px] h-[30px];
   }
 
+  .bubble {
+    @apply px-3 py-1.5 bg-aqua text-richBlack rounded-full;
+  }
+
+  .card-outline {
+    @apply border-solid border-2 border-aqua rounded-lg p-6;
+  }
+
+  .expand-toggle {
+    @apply text-sm font-light text-aqua;
+  }
+
   .nav-item {
     @apply relative p-[15px] text-sm font-light;
   }
@@ -77,5 +89,13 @@
 
   .slide-out {
     @apply transition-transform ease-out duration-1000;
+  }
+
+  .title {
+    @apply text-xl font-semibold text-aqua;
+  }
+
+  .sub-title {
+    @apply text-base font-light leading-7 text-aqua;
   }
 }
