@@ -91,6 +91,10 @@
     @apply transition-transform ease-out duration-1000;
   }
 
+  .transition-max-height {
+    transition: max-height 0.5s ease-in-out;
+  }
+
   .title {
     @apply text-xl font-semibold text-aqua;
   }
