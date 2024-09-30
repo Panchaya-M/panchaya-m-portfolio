@@ -33,7 +33,7 @@ export const EXPERIENCES = [
 
 export const SKILLS = [
   {
-    image: "panchaya-m-portfolio/images/skills/angular.svg",
+    image: "images/skills/angular.svg",
     name: "Angular",
   },
 ];
