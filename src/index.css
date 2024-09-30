@@ -10,13 +10,48 @@
   nav {
     @apply sticky top-0 bg-richBlack drop-shadow-lg z-[1000];
   }
+
+  h1 {
+    @apply text-5xl font-bold title-gradient;
+  }
+
+  h2 {
+    @apply text-[32px] font-semibold title-gradient;
+  }
+
+  p {
+    @apply text-base font-light leading-7;
+  }
+
+  section {
+    @apply py-[50px];
+  }
+}
+
+.bg-hero-lg {
+  background-image: url("../src/assets/images/background-lg.jpg");
+  background-size: cover;
+  background-position: right;
+  height: 360px;
 }
 
 .container {
   @apply max-w-[954px] mx-auto px-[15px];
 }
 
+.title-gradient {
+  @apply bg-gradient-to-r from-aqua to-mint bg-clip-text text-transparent;
+}
+
+.flex-column {
+  @apply flex flex-col gap-4;
+}
+
 @layer components {
+  .btn {
+    @apply w-fit p-3 rounded-lg drop-shadow-lg text-richBlack bg-aqua hover:bg-[#66E7E2] hover:-translate-y-0.5 hover:transition-all;
+  }
+
   .nav-item {
     @apply relative p-[15px] text-sm font-light;
   }
