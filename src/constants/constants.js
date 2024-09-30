@@ -31,9 +31,13 @@ export const EXPERIENCES = [
   },
 ];
 
+const BASE_PATH = import.meta.env.VITE_PUBLIC_URL
+  ? `${import.meta.env.VITE_PUBLIC_URL}`
+  : "panchaya-m-portfolio";
+
 export const SKILLS = [
   {
-    image: "panchaya-m-portfolio/images/skills/angular.svg",
+    image: `${BASE_PATH}/images/skills/angular.svg`,
     name: "Angular",
   },
 ];
