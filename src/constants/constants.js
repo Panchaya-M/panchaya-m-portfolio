@@ -30,3 +30,10 @@ export const EXPERIENCES = [
     technologies_use: ["Angular", "TypeScript", "Bootstrap", "Gitlab", "Figma"],
   },
 ];
+
+export const SKILLS = [
+  {
+    image: "panchaya-m-portfolio/images/skills/angular.svg",
+    name: "Angular",
+  },
+];
