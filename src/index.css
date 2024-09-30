@@ -52,6 +52,10 @@
     @apply w-fit p-3 rounded-lg drop-shadow-lg text-richBlack bg-aqua hover:bg-[#66E7E2] hover:-translate-y-0.5 hover:transition-all;
   }
 
+  .btn-carousel {
+    @apply p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white w-[30px] h-[30px];
+  }
+
   .nav-item {
     @apply relative p-[15px] text-sm font-light;
   }
@@ -69,5 +73,9 @@
 
   .nav-item:hover::before {
     width: 100%;
+  }
+
+  .slide-out {
+    @apply transition-transform ease-out duration-1000;
   }
 }
