@@ -36,4 +36,56 @@ export const SKILLS = [
     image: "images/skills/angular.svg",
     name: "Angular",
   },
+  {
+    image: "images/skills/bootstrap.svg",
+    name: "Bootstrap",
+  },
+  {
+    image: "images/skills/typescript.svg",
+    name: "TypeScript",
+  },
+  {
+    image: "images/skills/html-5.svg",
+    name: "HTML",
+  },
+  {
+    image: "images/skills/css-3.svg",
+    name: "CSS",
+  },
+  {
+    image: "images/skills/scss2.svg",
+    name: "SCSS",
+  },
+  {
+    image: "images/skills/javascript.svg",
+    name: "JavaScript",
+  },
+  {
+    image: "images/skills/react.svg",
+    name: "React",
+  },
+  {
+    image: "images/skills/tailwind.svg",
+    name: "Tailwind",
+  },
+  {
+    image: "images/skills/git.svg",
+    name: "Git",
+  },
+  {
+    image: "images/skills/gitlab.svg",
+    name: "GitLab",
+  },
+  {
+    image: "images/skills/figma.svg",
+    name: "Figma",
+  },
+];
+
+export const SOFT_SKILLS = [
+  "Problem Solving",
+  "Critical Thinking",
+  "Fast Learning",
+  "Effective Teamwork",
+  "Communication",
 ];
