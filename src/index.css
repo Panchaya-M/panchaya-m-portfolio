@@ -60,6 +60,14 @@
     @apply px-3 py-1.5 bg-aqua text-richBlack rounded-full;
   }
 
+  .card {
+    @apply bg-midnightGreen rounded-lg p-6;
+  }
+
+  .card-mini {
+    @apply card p-4;
+  }
+
   .card-outline {
     @apply border-solid border-2 border-aqua rounded-lg p-6;
   }
