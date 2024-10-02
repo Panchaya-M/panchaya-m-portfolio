@@ -76,7 +76,7 @@
   }
 
   .card-outline {
-    @apply border-solid border-2 border-aqua rounded-lg p-6;
+    @apply border-solid border-2 border-aqua rounded-lg p-3 sm:p-6;
   }
 
   .expand-toggle {
