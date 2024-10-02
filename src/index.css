@@ -12,15 +12,15 @@
   }
 
   h1 {
-    @apply text-5xl font-bold title-gradient;
+    @apply text-4xl sm:text-5xl font-bold title-gradient;
   }
 
   h2 {
-    @apply text-[32px] font-semibold title-gradient;
+    @apply text-[24px] sm:text-[32px] font-semibold title-gradient;
   }
 
   p {
-    @apply text-base font-light leading-7;
+    @apply text-sm sm:text-base font-light leading-6 sm:leading-7;
   }
 
   section {
@@ -28,11 +28,18 @@
   }
 }
 
-.bg-hero-lg {
+.bg-hero {
   background-image: url("../src/assets/images/background-lg.jpg");
   background-size: cover;
   background-position: right;
   height: 360px;
+}
+
+@media screen and (max-width: 639px) {
+  .bg-hero {
+    background-image: url("../src/assets/images/background-sm.jpg");
+    height: 419px;
+  }
 }
 
 .container {
@@ -44,12 +51,12 @@
 }
 
 .flex-column {
-  @apply flex flex-col gap-4;
+  @apply flex flex-col gap-2 sm:gap-4;
 }
 
 @layer components {
   .btn {
-    @apply w-fit p-3 rounded-lg drop-shadow-lg text-richBlack bg-aqua hover:bg-[#66E7E2] hover:-translate-y-0.5 hover:transition-all;
+    @apply w-fit p-2 sm:p-3 rounded-lg drop-shadow-lg text-richBlack bg-aqua hover:bg-[#66E7E2] hover:-translate-y-0.5 hover:transition-all;
   }
 
   .btn-carousel {
