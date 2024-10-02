@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <section id="about">
-      <div className="container flex justify-between gap-4">
+      <div className="container flex flex-col-reverse md:flex-row justify-between gap-4">
         <div className="flex-1 flex justify-center items-center relative">
           <Carousel slides={images} percent_width="70" autoSlide={true} />
         </div>
