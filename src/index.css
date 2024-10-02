@@ -95,6 +95,27 @@
     width: 100%;
   }
 
+  @media screen and (max-width: 639px) {
+    .nav-item {
+      background-color: transparent;
+    }
+
+    .nav-item:hover {
+      background-color: rgba(0, 255, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .nav-item::before {
+      top: 0;
+      transition: height 0.3s ease;
+    }
+
+    .nav-item:hover::before {
+      width: 2px;
+      height: 100%;
+    }
+  }
+
   .slide-out {
     @apply transition-transform ease-out duration-1000;
   }
