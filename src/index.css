@@ -64,15 +64,15 @@
   }
 
   .bubble {
-    @apply px-3 py-1.5 bg-aqua text-richBlack rounded-full;
+    @apply text-sm sm:text-base px-3 py-1.5 bg-aqua text-richBlack rounded-full;
   }
 
   .card {
-    @apply bg-midnightGreen rounded-lg p-6;
+    @apply bg-midnightGreen rounded-lg p-3 sm:p-6;
   }
 
   .card-mini {
-    @apply card p-4;
+    @apply card p-2 sm:p-4;
   }
 
   .card-outline {
@@ -132,7 +132,7 @@
   }
 
   .title {
-    @apply text-xl font-semibold text-aqua;
+    @apply text-lg sm:text-xl font-semibold text-aqua;
   }
 
   .sub-title {

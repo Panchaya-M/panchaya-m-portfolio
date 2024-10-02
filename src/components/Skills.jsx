@@ -3,9 +3,9 @@ import { SKILLS, SOFT_SKILLS } from "../constants/constants";
 /* eslint-disable react/prop-types */
 const Title = ({ icon, title }) => {
   return (
-    <div className="flex-column items-center">
-      <i className={`${icon} text-aqua text-xl`}></i>
-      <h3 className="title text-white mb-2">{title}</h3>
+    <div className="flex flex-row sm:flex-col items-center">
+      <i className={`${icon} text-aqua text-lg sm:text-xl pr-3 sm:pr-0`}></i>
+      <h3 className="title text-white sm:mb-2">{title}</h3>
     </div>
   );
 };
@@ -13,15 +13,21 @@ const Title = ({ icon, title }) => {
 const FESkills = ({ skills }) => {
   return (
     <>
-      <Title icon="fa-solid fa-code" title="Frontend Development" />
-      <div className="flex flex-wrap justify-center gap-4 px-10 mt-5">
+      <div className="flex justify-center">
+        <Title icon="fa-solid fa-code" title="Frontend Development" />
+      </div>
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-4 px-10 mt-5">
         {skills.map(skill => (
           <div
             key={skill.name}
-            className="card-mini flex-column items-center justify-between w-[110px]"
+            className="card-mini flex-column items-center justify-center sm:justify-between w-[75px] h-[75px] sm:w-[110px] sm:h-auto"
           >
-            <img key={skill.name} src={skill.image} height="60px" />
-            <p className="text-aqua">{skill.name}</p>
+            <img
+              key={skill.name}
+              src={skill.image}
+              className="h-[40px] sm:h-[60px]"
+            />
+            <p className="text-aqua hidden sm:block">{skill.name}</p>
           </div>
         ))}
       </div>
@@ -68,7 +74,7 @@ const Skills = () => {
         <div>
           <FESkills skills={skills} />
 
-          <div className="flex flex-wrap justify-center gap-4 px-10 mt-5">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 px-10 mt-5">
             <div className="flex-1 card flex-column">
               <SoftSkills skills={softSkills} />
             </div>

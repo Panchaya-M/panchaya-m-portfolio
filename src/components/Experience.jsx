@@ -5,7 +5,7 @@ import { EXPERIENCES } from "../constants/constants";
 const CompanyHeader = ({ company, start, end, job_position }) => {
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row justify-between">
         <h3 className="title mb-2">{company}</h3>
         <p className="mb-2">
           {start} - {end}
@@ -36,12 +36,10 @@ const Projects = ({ intro, projects }) => {
     <>
       <p className="mt-4">{intro}:</p>
       {projects.map((project, projectIndex) => (
-        <div key={projectIndex}>
-          <div className="flex justify-between border-b-[1px] border-aqua mb-2">
-            <h4 className="sub-title">{project.name}:</h4>
-          </div>
-          <p>{project.details}</p>
-        </div>
+        <details key={projectIndex} open={projectIndex === 0}>
+          <summary className="sub-title mb-2">{project.name}</summary>
+          <p className="pl-4">{project.details}</p>
+        </details>
       ))}
     </>
   );
