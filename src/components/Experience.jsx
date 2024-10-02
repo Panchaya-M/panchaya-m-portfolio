@@ -47,7 +47,7 @@ const Projects = ({ intro, projects }) => {
 
 const TechnologiesUse = ({ technologies }) => {
   return (
-    <div className="flex flex-wrap items-center gap-4 mt-4">
+    <div className="flex flex-wrap items-center gap-2 sm:gap-4 mt-4">
       <h4 className="sub-title font-semibold">Technologies Used:</h4>
       <ul className="flex flex-wrap gap-4">
         {technologies.map((tech, techIndex) => (
