@@ -73,7 +73,7 @@ const Navbar = () => {
 
       <dialog
         open
-        className={`sm:hidden backdrop-sepia-0 bg-black/40 mr-0 ${
+        className={`sm:hidden backdrop-sepia-0 bg-black/40 mr-0 overflow-hidden ${
           openMenus ? "w-full" : "w-0 delay-[50ms]"
         } h-screen z-[1000]`}
       >
