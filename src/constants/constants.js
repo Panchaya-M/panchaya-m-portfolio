@@ -85,7 +85,10 @@ export const SKILLS = [
 export const SOFT_SKILLS = [
   "Problem Solving",
   "Critical Thinking",
+  "Flexibility",
+  "Determined",
   "Fast Learning",
-  "Effective Teamwork",
+  "Teamwork",
   "Communication",
+  "Work under pressure",
 ];
