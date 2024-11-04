@@ -38,10 +38,10 @@ const FESkills = ({ skills }) => {
 const SoftSkills = ({ skills }) => {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex sm:justify-center">
         <Title icon="fa-solid fa-user-group" title="Soft Skills" />
       </div>
-      <ul className="list-disc grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ml-[6rem]">
+      <ul className="list-disc grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ml-6 sm:ml-[6rem]">
         {skills.map((skill, skillIndex) => (
           <li key={skillIndex}>
             <p>{skill}</p>
@@ -77,7 +77,7 @@ const Skills = () => {
           <FESkills skills={skills} />
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 px-10 mt-5">
-            <div className="flex-1 card flex-column">
+            <div className="flex-1 card-outline flex-column md:mx-[3rem]">
               <SoftSkills skills={softSkills} />
             </div>
 
