@@ -38,8 +38,10 @@ const FESkills = ({ skills }) => {
 const SoftSkills = ({ skills }) => {
   return (
     <>
-      <Title icon="fa-solid fa-user-group" title="Soft Skills" />
-      <ul className="list-disc pl-6">
+      <div className="flex justify-center">
+        <Title icon="fa-solid fa-user-group" title="Soft Skills" />
+      </div>
+      <ul className="list-disc grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ml-[6rem]">
         {skills.map((skill, skillIndex) => (
           <li key={skillIndex}>
             <p>{skill}</p>
@@ -50,17 +52,17 @@ const SoftSkills = ({ skills }) => {
   );
 };
 
-const LanguageSkill = () => {
-  return (
-    <>
-      <Title icon="fa-solid fa-globe" title="Language Skill" />
-      <p>
-        I can use English to communicate in daily life and be able to write and
-        read to understand the importance of general messages.
-      </p>
-    </>
-  );
-};
+// const LanguageSkill = () => {
+//   return (
+//     <>
+//       <Title icon="fa-solid fa-globe" title="Language Skill" />
+//       <p>
+//         I can use English to communicate in daily life and be able to write and
+//         read to understand the importance of general messages.
+//       </p>
+//     </>
+//   );
+// };
 
 const Skills = () => {
   const skills = SKILLS;
@@ -79,9 +81,9 @@ const Skills = () => {
               <SoftSkills skills={softSkills} />
             </div>
 
-            <div className="flex-1 card flex-column">
+            {/* <div className="flex-1 card flex-column">
               <LanguageSkill />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
