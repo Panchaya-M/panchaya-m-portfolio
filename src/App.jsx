@@ -12,7 +12,7 @@ function App() {
       <div className="flex justify-center items-center">
         <a className="btn text-xs sm:text-base"
           href={cv} download="cv-panchaya.pdf">
-          <i className="fa-solid fa-file-arrow-down pr-2 text-xl"></i>
+          <i className="fa-solid fa-file-arrow-down pr-2 text-sm sm:text-xl"></i>
           Download CV
         </a>
       </div>
