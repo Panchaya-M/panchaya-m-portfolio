@@ -1,5 +1,5 @@
 import { About, Contact, Experience, Hero, Navbar, Skills } from "./components";
-import cv from "./assets/files/cv.pdf"
+import cv from "./assets/files/cv-panchaya.pdf"
 
 function App() {
   return (

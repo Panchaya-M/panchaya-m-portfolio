@@ -5,11 +5,11 @@ export const EXPERIENCES = [
     end: "Present",
     job_position: "Frontend Developer",
     responsibilities: [
-      "Created UI using Angular.",
+      "Created UI using Angular, TypeScript and Bootstrap.",
       "Designed and implemented UX/UI and responsive layouts.",
       "Worked closely with backend developers to integrate APIs, connecting frontend components with backend services.",
     ],
-    projects_intro: "I’ve had the chance to work on some exciting projects",
+    projects_intro: "I’ve had the chance to work on some exciting projects:",
     projects: [
       {
         name: "Credit information Recording System",
@@ -28,6 +28,19 @@ export const EXPERIENCES = [
       },
     ],
     technologies_use: ["Angular", "TypeScript", "Bootstrap", "Gitlab", "Figma"],
+  },
+  {
+    company: "Web Development Bootcamp at Skooldio",
+    start: "August",
+    end: "November 2024",
+    responsibilities: [
+      "Builded e-Commerce website using React, Javascript and Tailwind.",
+      "Designed and implemented UX/UI and responsive layouts.",
+      "I had the chance to lead this project and take charge of building the website's core structure.",
+    ],
+    projects_intro: "",
+    projects: [],
+    technologies_use: ["React", "JavaScript", "Tailwind", "Github", "Figma"],
   },
 ];
 

@@ -34,7 +34,7 @@ const Responsibilities = ({ responsibilities }) => {
 const Projects = ({ intro, projects }) => {
   return (
     <>
-      <p className="mt-4">{intro}:</p>
+      <p className="mt-4">{intro}</p>
       {projects.map((project, projectIndex) => (
         <details key={projectIndex} open={projectIndex === 0}>
           <summary className="sub-title mb-2">{project.name}</summary>
